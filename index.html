@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Flores</title>
+    <link rel="icon" type="image/png" href="recursos/img/Logofin1.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    /* Configuración General */
+    html, body{
+        height: 100%;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* INSTRUCCIÓN 1: Sombra Morado Neón */
+    header {
+        padding: 40px;
+        background-color: #1a1a1a; /* Fondo oscuro para que resalte el neón */
+        color: white;
+    }
+    h1 {
+        font-weight: bold;
+        text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
+    } 
+
+    main {
+        flex: 1;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* EL RETO: Clase .semana para tarjetas elegantes */
+    .semana {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-left: 8px solid hsl(217, 92%, 70%);
+        transition: transform 0.3s ease;
+        text-align: left;
+    }
+    .semana:hover {
+        transform: translateY(-5px);
+    }
+
+    /* INSTRUCCIÓN 2: Efecto Zoom en Logo */
+    .logo-zoom {
+        transition: transform 0.3s ease;
+    }
+    .logo-zoom:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        border-top: 5px solid rgb(255, 176, 154);
+        background-color: rgb(255, 228, 188);
+    }
+
+    @media(max-width:600px){
+        footer{ flex-direction: column; gap: 15px; padding: 20px; }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+
+    <main>
+        <h4>Contenido de la página WEB</h4>
+
+        <div class="semana">
+            <h3>Semana 1: Introducción a la IA</h3>
+            <p>Hoy aprendimos cómo integrar estilos CSS avanzados y efectos dinámicos en nuestro sitio web.</p>
+            <iframe src="Recursos/Img/Introducción Arduino (Barreda 11C) (1).pdf"
+            width="100%"
+            height="450px">
+        </iframe>
+        </div>
+
+        <div class="semana">
+            <h3>Semana 2: Estructuras Flexibles</h3>
+            <p>Exploramos cómo el diseño responsivo ayuda a que la página se vea bien en celulares.</p>
+        </div>
+    </main>
+
+    <footer>
+        <span>Kerry</span>        
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" class="logo-zoom" height="75" width="300">
+    </footer>
+</body>
+</html>
